@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS actividad_2
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
+
+USE actividad_2;
+
+CREATE TABLE IF NOT EXISTS registros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    age INT NOT NULL,
+    country VARCHAR(100) NOT NULL
+);
